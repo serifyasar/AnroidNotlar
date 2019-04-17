@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragmentContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/bg"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/btnCevsen"
+            android:layout_width="200dp"
+            android:layout_margin="3dp"
+            android:layout_height="wrap_content"
+
+            android:text="Cevşen"
+            android:background="@color/colorButon"
+            android:textColor="@android:color/white"
+
+            tools:ignore="MissingConstraints"
+            />
+
+        <Button
+            android:id="@+id/btnSabah"
+            android:layout_width="200dp"
+            android:layout_margin="3dp"
+            android:layout_height="wrap_content"
+
+            android:text="Sabah Duaları"
+            android:background="@color/colorButon"
+            android:textColor="@android:color/white"
+
+            tools:ignore="MissingConstraints"
+            />
+
+        <Button
+            android:id="@+id/btnAksam"
+            android:layout_width="200dp"
+            android:layout_margin="3dp"
+            android:layout_height="wrap_content"
+
+            android:text="Akşam Duaları"
+            android:background="@color/colorButon"
+            android:textColor="@android:color/white"
+
+            tools:ignore="MissingConstraints"
+            />
+
+
+        <Button
+            android:id="@+id/btnBedir"
+            android:layout_width="200dp"
+            android:layout_margin="3dp"
+            android:layout_height="wrap_content"
+
+            android:text="Ashab-ı Bedir"
+            android:background="@color/colorButon"
+            android:textColor="@android:color/white"
+
+            tools:ignore="MissingConstraints"
+            />
+
+
+
+        <Button
+            android:id="@+id/btnFetih"
+            android:layout_width="200dp"
+            android:layout_margin="3dp"
+            android:layout_height="wrap_content"
+
+            android:text="Fetih Suresi"
+            android:background="@color/colorButon"
+            android:textColor="@android:color/white"
+
+            tools:ignore="MissingConstraints"
+            />
+
+
+        <Button
+            android:id="@+id/btnYasin"
+            android:layout_width="200dp"
+            android:layout_margin="3dp"
+            android:layout_height="wrap_content"
+
+            android:text="Yasin Suresi"
+            android:background="@color/colorButon"
+            android:textColor="@android:color/white"
+
+            tools:ignore="MissingConstraints"
+            />
+
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
