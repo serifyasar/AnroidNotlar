@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        tools:context=".Activity.DetailActivity">
+
+    <androidx.cardview.widget.CardView
+            android:id="@+id/cardDetail"
+            app:cardCornerRadius="12dp"
+            android:background="@android:color/white"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.5" android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                      android:orientation="vertical" android:padding="16dp">
+
+            <TextView
+                    android:text="TextView"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/tvPosition" android:textSize="18sp"
+            />
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="9dp"
+                    android:layout_marginBottom="9dp"
+                    android:background="@android:color/darker_gray"/>
+            <TextView
+                    android:layout_gravity="center"
+                    android:text="TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/tvDetailName"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" android:textSize="24sp"
+                    android:textColor="@color/colorAccent"/>
+
+            <com.google.android.material.button.MaterialButton android:layout_width="match_parent"
+                                                               android:layout_marginTop="30dp"
+                                                               android:layout_height="wrap_content"
+
+                    app:backgroundTint="@color/colorPrimary"
+            android:textColor="@android:color/white"
+                                                               android:text="Kelime Çalışması"
+                                                               android:id="@+id/btnPractise"
+                                                               app:cornerRadius="12dp"
+            />
+
+            <com.google.android.material.button.MaterialButton android:layout_width="match_parent"
+                                                               android:layout_marginTop="14dp"
+                                                               android:layout_height="wrap_content"
+
+                                                               app:backgroundTint="@color/colorPrimaryDark"
+
+                                                               android:textColor="@android:color/white"
+                                                               android:text="Kelime Testi"
+                                                               android:id="@+id/btnTest"
+                                                               app:cornerRadius="12dp"
+            />
+
+
+            <com.google.android.material.button.MaterialButton android:layout_width="match_parent"
+                                                               android:layout_marginTop="14dp"
+                                                               android:layout_height="wrap_content"
+
+                                                               app:backgroundTint="@color/colorAccent"
+
+                                                               android:textColor="@android:color/white"
+                                                               android:text="Ayet Testi"
+                                                               android:id="@+id/btnQuranTest"
+                                                               app:cornerRadius="12dp"
+            />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

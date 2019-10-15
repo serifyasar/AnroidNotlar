@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_margin="16dp"
+
+
+
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                             android:layout_height="wrap_content">
+
+    <ImageView
+
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" app:srcCompat="@drawable/oval"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/item_oval_img"
+    />
+    <TextView
+            android:text="TextView"
+            android:textColor="@android:color/white"
+            android:layout_width="80dp"
+            android:textSize="16sp"
+            android:layout_height="wrap_content"
+           android:id="@+id/item_tv_name" android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" android:textAlignment="center"/>
+    <ImageView
+
+            android:layout_marginLeft="-10dp"
+            android:layout_width="24dp"
+            android:layout_height="24dp" app:srcCompat="@android:drawable/ic_lock_lock"
+            android:layout_toEndOf="@+id/item_oval_img" android:layout_alignParentBottom="true"
+            android:id="@+id/item_lock_img"/>
+</RelativeLayout>

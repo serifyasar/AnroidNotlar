@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:id="@+id/mainContainer"
+
+        android:layout_height="match_parent"
+        tools:context=".Activity.QuizActivity">
+    <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:scaleY="2"
+            android:max="100"
+            app:layout_constraintEnd_toEndOf="parent" android:id="@+id/progStatus"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="8dp" android:layout_marginEnd="8dp"
+            android:layout_marginTop="3dp"/>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:id="@+id/lineSoru"
+                  android:orientation="vertical" app:layout_constraintTop_toTopOf="@id/progStatus"
+                  android:layout_marginTop="60dp">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:layout_marginLeft="16dp"
+                  android:layout_marginRight="16dp"
+
+
+                  android:visibility="gone"
+                  android:textSize="36sp"
+                  android:textColor="@color/colorAccent"
+                  android:id="@+id/question_tv"
+                  android:text="Aşağıdaki sözcüklerin anlamını yazınız..."
+
+        />
+
+        <com.google.android.material.chip.ChipGroup android:layout_width="match_parent" android:visibility="gone"
+                                                    android:layout_height="wrap_content"
+
+                                                    android:id="@+id/chip_group"
+
+
+
+                                                    app:layout_constraintTop_toTopOf="@id/question_tv"
+                                                    android:layout_marginTop="40dp"
+                                                    app:chipSpacing="6dp"
+                                                    app:singleSelection="true"
+                                                    app:layout_constraintStart_toEndOf="@+id/question_tv"
+                                                    android:layout_marginStart="16dp"
+                                                    app:layout_constraintEnd_toStartOf="@+id/question_tv"
+                                                    android:layout_marginEnd="16dp">
+
+            <com.google.android.material.chip.Chip
+                    android:id="@+id/option_a_chip"
+                    style="@style/CheckableChip"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Option A"/>
+            <com.google.android.material.chip.Chip
+                    android:id="@+id/option_b_chip"
+                    style="@style/CheckableChip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Option B"/>
+            <com.google.android.material.chip.Chip
+                    android:id="@+id/option_c_chip"
+                    style="@style/CheckableChip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Option C"/>
+            <com.google.android.material.chip.Chip
+                    android:id="@+id/option_d_chip"
+                    style="@style/CheckableChip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Option D"/>
+        </com.google.android.material.chip.ChipGroup>
+
+
+    </LinearLayout>
+    <LinearLayout android:id="@+id/lineControl" android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:paddingLeft="16dp"
+                  android:paddingRight="16dp"
+                  android:paddingTop="16dp"
+                  android:paddingBottom="86dp"
+
+                  app:layout_constraintBottom_toBottomOf="parent"
+
+
+                  android:visibility="gone"
+
+                  android:background="@color/colorBtn1"
+
+                  android:orientation="vertical">
+                  <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Doğru"
+                  android:textSize="20sp"
+                  android:id="@+id/txtDurum"
+                  android:textColor="@color/colorAccent1"/>
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton android:layout_width="match_parent"
+                                                       android:padding="12dp"
+                                                       android:visibility="gone"
+                                                       android:layout_height="wrap_content"
+                                                       app:backgroundTint="@color/colorAccent"
+                                                       android:id="@+id/btnAnswer"
+                                                       android:text="Sonraki"
+                                                       android:textColor="@android:color/white"
+                                                       app:cornerRadius="16dp"
+                                                       app:layout_constraintBottom_toBottomOf="parent"
+                                                       app:layout_constraintLeft_toLeftOf="parent"
+                                                       app:layout_constraintRight_toRightOf="parent"
+                                                       android:layout_marginBottom="3dp"
+                                                       android:layout_marginLeft="16dp"
+                                                       android:layout_marginRight="16dp"
+    />
+    <ProgressBar
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:id="@+id/progLoad"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

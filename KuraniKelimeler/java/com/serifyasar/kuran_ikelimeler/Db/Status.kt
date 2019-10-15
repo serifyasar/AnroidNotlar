@@ -1,0 +1,13 @@
+package com.serifyasar.kuran_ikelimeler.Db
+
+import androidx.room.Entity
+import androidx.room.PrimaryKey
+
+@Entity()
+data class Status  (
+
+    @PrimaryKey(autoGenerate = true)
+    var sid:Int=0,
+    var level : Int=0
+
+)
